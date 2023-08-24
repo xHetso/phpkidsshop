@@ -1,0 +1,52 @@
+.col {
+    padding: 0;
+    margin: 0;
+  }
+.one_products__title{
+    color:black;
+}
+.product__presentation{
+    display:flex;
+}
+.images__small{
+    width: 157px;
+    height: 235px;
+    margin-bottom: 21px;
+
+}
+.images__big{
+    width: 498px;
+    height: 759px;
+    margin-left: 20px;
+}
+.images__smalls{
+    display: flex;
+    flex-direction: column;
+}
+.images__big_presentation{
+    width: 100%;
+}
+.one_products__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #858B95;
+    margin-bottom: 28px;
+}
+button.button {
+    margin-top: 20px;
+    background-color: #ff0000; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+    border: none; /* Убираем границу кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    border-radius: 4px; /* Закругление углов кнопки */
+  }
+  
+button.button:hover {
+    background-color: #ff3333; /* Цвет фона кнопки при наведении */
+  }

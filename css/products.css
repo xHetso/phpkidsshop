@@ -1,0 +1,419 @@
+@import "../libs/bootstrap5/bootstrap-reboot.min.css";
+
+/*Normalize tipo*/
+
+@import "../libs/bootstrap5/bootstrap-grid.min.css";
+
+/*setka bootstrap*/
+
+@import "../fonts/icomoon/style.css";
+@import "components/bootstrap-skins.css";
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 51px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.fs-30{
+    font-size: 30px !important;
+    color:white !important;
+}
+.icon-favorite.fs-30:hover:before{
+    content: "\e902";
+    color: rgb(255, 255, 255) !important;
+}
+.icon-favorite.fs-30:before {
+    content: "\e902";
+    color: #ffffff !important;
+  }
+.icon-favorite:before .fs-30{
+    content: "\e902";
+    color: rgb(255, 255, 255) !important;
+}
+
+/*мои*/
+section.section__navbar {
+    position: fixed;
+    z-index: 99999999999999999;
+    width: 100%;
+    background-color:#c56ca2;
+    top: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Расположение элементов по горизонтали */
+    align-items: center; /* Расположение элементов по вертикали */
+    height: 90px;
+  }
+  
+  /* Стили для логотипа */
+  .navbar .logo {
+
+  }
+  
+  /* Стили для меню */
+  .navbar ul {
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .navbar a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+    transition: color 0.2s ease-in-out; /* Анимация при наведении курсора */
+  }
+  
+  .navbar a:hover {
+    color: #555; /* Цвет текста при наведении курсора */
+  }
+/*navbar*/
+.section__navbar.scrolled {
+    background-color:#c56ca2; /* новый цвет навбара */
+  }
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+.menu-btn span {
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 10px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 10px);
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 30px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Кнопка выпадающего меню при наведении и фокусировке */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background:#c56ca2;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+  .show {display:block;}
+/*navbar-end*/
+
+/*header*/
+.product__header{
+    position: relative;
+    min-height: 485px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 120px;
+}
+.product__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.product__header__content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    max-width: 582px;
+    margin-bottom: 140px;
+    margin-left: 123px;
+}
+
+.header__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.header__title2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+/*!header*/
+
+/*products*/
+
+.icon-favorite {
+    font-size: 44px;
+}
+
+.icon-favorite:hover:before{
+    content: "\e902";
+    color: #c56ca2;
+}
+
+.btn__collection {
+    display: inline-block;
+    line-height: 1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #c56ca2;
+    width: 100%;
+    border: none;
+    padding: 17px;
+    transition: all .09s ease-out;
+}
+
+.btn__collection-accent {
+    background-color: transparent;
+    width: 370px;
+    height: 75px;
+    border: 2px solid #c56ca2z;
+}
+
+.btn__collection-accent:hover {
+    background-color: #c56ca2;
+    color: #FFFFFF;
+}
+
+
+/*section*/
+
+.section {
+    position: relative;
+    margin: 120px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section__title {
+    margin-bottom: 80px;
+}
+
+.section__title__product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section__collection {
+    margin-top: 186px;
+}
+/*sort*/
+.product__sort {
+    display:flex;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:30px 65px;
+}
+
+.products__sort__1 {
+    display: flex;
+    gap: 45px;
+}
+
+.product__sort__2{
+    display:flex;
+    gap: 15px;
+}
+
+select{
+    border: none;
+}
+
+/*product*/
+.collection{
+    margin: 80px 0 0 0;
+}
+.product__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__img__collection {
+    width: 330px;
+    height: 495px;
+    margin-bottom: 25px;
+}
+
+.product__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.product__price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.product__card{
+    margin-bottom: 60px;
+}
+
+
+/*Footer*/
+
+.section__title__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color:#c56ca2;
+    padding-top: 68px;
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin-bottom: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .09s ease-out;
+}
+
+.footer__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer__social li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0 !important;
+}
+
+.footer__social li:last-child {
+    margin-right: 0;
+}
+
+.footer__social [class*="icon-"]:before {
+    font-size: 24px;
+    transition: all .09s ease-out;
+}
+
+.footer__social a:hover [class*="icon-"]:before {
+    color: #D4C17F;
+}
+
+.footer ul li a:hover {
+    color: #D4C17F;
+}
